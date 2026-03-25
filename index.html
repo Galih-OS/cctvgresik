@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    
+<script>
+const links = document.querySelectorAll('a[href]');
+links.forEach(link => {
+  const url = link.href;
+  const prefetch = document.createElement('link');
+  prefetch.rel = 'prefetch';
+  prefetch.href = url;
+  document.head.appendChild(prefetch);
+});
+</script>
+    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CCTV Online Gresik</title>
