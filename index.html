@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="id">
 <head>
-    
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CCTV Online Gresik</title>
@@ -15,14 +15,27 @@ body{
     font-family:Segoe UI;
 }
 
-h2,h6{
-    color:white;
-}
-
 .card{
     background:#1e293b;
     border-radius:15px;
     border:none;
+    position: relative;
+    overflow: hidden;
+}
+
+/* NAMA CCTV DI ATAS VIDEO */
+.video-title{
+    position:absolute;
+    top:8px;
+    left:8px;
+    right:8px;
+    background:rgba(255, 255, 255, 0.6);
+    padding:5px 8px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:500;
+    z-index:2;
+    text-align:center;
 }
 
 video, iframe{
@@ -30,10 +43,6 @@ video, iframe{
     border-radius:12px;
     background:black;
     aspect-ratio:16/9;
-}
-
-.modal-content{
-    background:black;
 }
 </style>
 </head>
@@ -46,119 +55,100 @@ video, iframe{
 
 <div class="row g-3">
 
-
 <!-- 1 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">CCTV PERTIGAAN MIE SEDAP</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/rn00k3bcle24m8d1azjyrl60.m3u8"></video>
-</div>
-</div>
-    
-<!-- 1 -->
-<div class="col-6 col-md-4 col-lg-2">
-<div class="card p-2">
-<h6 class="text-center">CCTV PEREMPATAN PASAR GRESIK</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/jwq9d74w3r6ypghi80g7rkzy.m3u8"></video>
+<div class="video-title">🔴 CCTV PERTIGAAN MIE SEDAP</div>
+<video controls autoplay muted playsinline preload="none" data-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/rn00k3bcle24m8d1azjyrl60.m3u8"></video>
 </div>
 </div>
 
 <!-- 2 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Pasar Bungah - arah Fathma Medika</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/eg42o2380l92c78e857opuz4.m3u8"></video>
+<div class="video-title">🔴 Pasar Bungah - arah Fathma Medika</div>
+<video controls autoplay muted playsinline preload="none" data-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/eg42o2380l92c78e857opuz4.m3u8"></video>
 </div>
 </div>
 
 <!-- 3 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Arah Bungah</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/zo9t19q4zpv4vzb4nsccqerz.m3u8"></video>
+<div class="video-title">🔴 ARAH BUNGAH</div>
+<video controls autoplay muted playsinline preload="none" data-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/zo9t19q4zpv4vzb4nsccqerz.m3u8"></video>
 </div>
 </div>
 
 <!-- 4 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Exit tol manyar arah bungah</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/qd9pxjy124igecgux9vtt037.m3u8"></video>
+<div class="video-title">🔴 Exit tol manyar arah bungah</div>
+<video controls autoplay muted playsinline preload="none" data-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/qd9pxjy124igecgux9vtt037.m3u8"></video>
 </div>
 </div>
 
 <!-- 5 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Arah Superindo GKB</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/fh1c3gad00e3hjt4rt1mpyf1.m3u8"></video>
+<div class="video-title">🔴 Arah Superindo GKB</div>
+<video controls autoplay muted playsinline preload="none" data-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/fh1c3gad00e3hjt4rt1mpyf1.m3u8"></video>
 </div>
 </div>
 
 <!-- 6 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Indobarata Arah Kartini</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/gnvnwetvnjyxfctxzci7ah68.m3u8"></video>
+<div class="video-title">🔴 Indobarata Arah Kartini</div>
+<video controls autoplay muted playsinline preload="none" data-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/gnvnwetvnjyxfctxzci7ah68.m3u8"></video>
 </div>
 </div>
 
 <!-- 7 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Indobarata Arah Surabaya</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/qmxkpjga7u032w3pkbgqjtzv.m3u8"></video>
+<div class="video-title">🔴 Indobarata Arah Surabaya</div>
+<video controls autoplay muted playsinline preload="none" data-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/qmxkpjga7u032w3pkbgqjtzv.m3u8"></video>
 </div>
 </div>
 
 <!-- 8 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Panoramic Kantor Bupati Gresik</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/bpq9fht94zb9l0xw5bnv2z24.m3u8"></video>
+<div class="video-title">🔴 Panoramic Kantor Bupati Gresik</div>
+<video controls autoplay muted playsinline preload="none" data-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/bpq9fht94zb9l0xw5bnv2z24.m3u8"></video>
 </div>
 </div>
 
 <!-- 9 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Exit Tol Cerme</h6>
-<video controls autoplay muted playsinline
-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/nb7pzbmeznir1u9erko6ea88.m3u8"></video>
+<div class="video-title">🔴 Exit Tol Cerme</div>
+<video controls autoplay muted playsinline preload="none" data-src="https://testing-apicctv.gresikkab.go.id/uploads/hls/nb7pzbmeznir1u9erko6ea88.m3u8"></video>
 </div>
 </div>
 
 <!-- 10 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Exit Tol Romokalisari</h6>
+<div class="video-title">🔴 Exit Tol Romokalisari</div>
 <iframe src="https://rtsp.me/embed/RDHatzGD?autoplay=1"
 allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 </div>
 
 <!-- 11 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Simpang Romo</h6>
+<div class="video-title">🔴 Simpang Rumo</div>
 <iframe src="https://rtsp.me/embed/b9TTETzk?autoplay=1"
 allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 </div>
 
 <!-- 12 -->
-<div class="col-6 col-md-4 col-lg-2">
+<div class="col-6 col-md-4 col-lg-3">
 <div class="card p-2">
-<h6 class="text-center">Exit Tol Kebomas</h6>
+<div class="video-title">🔴 Exit Tol Kebomas</div>
 <iframe src="https://rtsp.me/embed/ZBd5nB2T?autoplay=1"
 allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
@@ -166,6 +156,47 @@ allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  document.querySelectorAll("video").forEach(function(video){
+
+    const src = video.getAttribute("data-src");
+
+    if(src && src.includes(".m3u8")){
+
+        if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = src;
+            video.play().catch(()=>{});
+        } 
+        else if (Hls.isSupported()) {
+            const hls = new Hls({ maxBufferLength:10 });
+
+            hls.loadSource(src);
+            hls.attachMedia(video);
+
+            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                video.play().catch(()=>{});
+            });
+
+            hls.on(Hls.Events.ERROR, function(event, data){
+                if(data.fatal){
+                    setTimeout(()=>{
+                        hls.destroy();
+                        video.load();
+                    },3000);
+                }
+            });
+        }
+    }
+
+  });
+
+});
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
